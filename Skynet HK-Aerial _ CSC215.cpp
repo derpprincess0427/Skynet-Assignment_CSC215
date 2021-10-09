@@ -1,6 +1,7 @@
 /*
 Alexus Dooley
-07/22/2021
+10/09/2021
+CSC215
 Skynet HK-Aerial Phase 1
 Create a Grid search program that uses loops to locate an enemy
 */
@@ -47,7 +48,7 @@ int main()
 	cout << "which we have turned into a grid and numbered each square mile from 1-64. \n";
 	cout << "\n Still following? \n";
 	cin >> answer;
-	cout << "Okay good, let's get started! \n";
+	cout << "\n Okay good, let's get started! \n";
 	cout << "\n Generating random enemy location on grid...\n";
 	cout << "The enemy is located at Sector " << secretNumber << " on the grid!\n";
 	cout << "Now we will test Skynet HK-Aerial Software to see how many tries it \n";
@@ -75,7 +76,7 @@ int main()
 			cout << "As a result, the software will now use this number as its maximum, as guessing anything above it would be pointless. \n";
 			cout << "Got it?\n";
 				cin >> answer;
-			cout << "Okay, now let's continue. \n";
+			cout << "\n Okay, now let's continue. \n";
 
 			//assign this guess as the high number
 			searchGridHighNumber = targetLocationPrediction;
@@ -88,7 +89,7 @@ int main()
 			cout << "The software guessed the enemy was located in Sector " << targetLocationPrediction << " \n";
 			cout << "which is lower than the Sector number that the enemy is residing in. \n";
 			cout << "As a result, the software will now use this number as its minimum, as guessing anything below it would be pointless. \n";
-			cout << "Got it?\n";
+			cout << "\n You following still?\n";
 				cin >> answer;
 				cout << "Okay, now let's continue. \n";
 
@@ -105,7 +106,7 @@ int main()
 			cout << "The Skynet HK-Aerial Software took " << tries << "guesses to find the enemy location!\n";
 		}
 	}
-	//set the loop condition
+	//set the loop condition that while the prediction isn't the number it continues
 	while (targetLocationPrediction != secretNumber);
 
 	//main() return statement
